@@ -1,0 +1,38 @@
+Rails:
+  Enabled: true
+AllCops:
+  TargetRubyVersion: 2.5
+  TargetRailsVersion: 5.2
+  Exclude:
+  - 'db/schema.rb'
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Style/MixinUsage:
+  Exclude:
+  - 'bin/setup'
+  - 'bin/update'
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/ModuleLength:
+  Exclude:
+  - '**/*_spec.rb'
+  - 'spec/factories/**/*'
+Metrics/BlockLength:
+  Exclude:
+  - 'spec/**/*'
+  - 'config/**/*'
+Metrics/AbcSize:
+  Exclude:
+  - 'db/migrate/*'
+Metrics/MethodLength:
+  Exclude:
+  - 'db/migrate/*'
+Rails/SkipsModelValidations:
+  Exclude:
+  - 'spec/**/*'
+  - 'db/**/*'
+Security/Eval:
+  Exclude:
+  - 'spec/**/*'
